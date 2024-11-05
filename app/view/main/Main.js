@@ -99,7 +99,7 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
                             break;
                         case 'users':
                             mainContentContainer.add({
-                                xtype: 'gridlist',
+                                xtype: 'user',
                             });
                             break;
                         case 'groups':

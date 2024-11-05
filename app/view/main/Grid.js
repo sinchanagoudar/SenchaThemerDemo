@@ -8,12 +8,6 @@ Ext.define('SenchaThemerDemo.view.main.Grid', {
     ],
 
     title:'Car production by largest manufacturers',
-
-    layout: {
-        type: 'vbox',
-        align: 'stretch'
-    },
-
     tbar: [
         '->',
         {
@@ -52,7 +46,7 @@ Ext.define('SenchaThemerDemo.view.main.Grid', {
         downloadServerUrl: '//svg.sencha.io',
 
         width: '100%',
-        height: 460,
+        height: 300,
 
         legend: {
             type: 'sprite',
