@@ -8,16 +8,21 @@ Ext.define('SenchaThemerDemo.view.main.Dashboard', {
     },
 
     width: '100%',
-    height: 800,
+    height: 600,
+    scrollable: 'y',
+
+    defaults: {
+        xtype: 'container',
+        layout: {
+            type: 'hbox',
+            align: 'stretch'
+        },
+        flex: 1,
+        height: 300,
+    },
 
     items: [
         {
-            xtype: 'container',
-            layout: {
-                type: 'hbox',
-                align: 'stretch'
-            },
-            flex: 1,
             items: [
                 {
                     xtype: 'mainlist',
@@ -32,23 +37,12 @@ Ext.define('SenchaThemerDemo.view.main.Dashboard', {
             ]
         },
         {
-            xtype: 'container',
-            layout: {
-                type: 'hbox',
-                align: 'stretch'
-            },
-            flex: 1,
             items: [
                 {
                     xtype: 'user',
                     flex: 1,
                     margin: '0 10 0 0'
                 },
-                // {
-                //     xtype: 'faq',
-                //     flex: 1,
-                //     margin: '10 10 0 0'
-                // }
             ]
         }
     ]

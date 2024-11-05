@@ -97,6 +97,7 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
             }
         }, {
             xtype: 'container',
+            scrollable: 'y',
             flex: 1,
             itemId: 'maincontent',
             listeners: {

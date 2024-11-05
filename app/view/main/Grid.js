@@ -16,9 +16,9 @@ Ext.define('SenchaThemerDemo.view.main.Grid', {
         xtype: 'polar',
         reference: 'chart',
         width: '100%',
-        height: 200,
+        height: 250,
         legend: {
-            docked: 'right'
+            docked: 'bottom'
         },
         store: {
             type: 'cars'
