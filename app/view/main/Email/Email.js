@@ -18,7 +18,6 @@ Ext.define('SenchaThemerDemo.view.main.Email.Email', {
         'Ext.XTemplate'
     ],
 
-    // controller: 'mainview',
     itemId: 'emailMainContainer',
     margin: '0 0 0 20',
 
@@ -133,18 +132,21 @@ Ext.define('SenchaThemerDemo.view.main.Email.Email', {
             flex: 1,
             height: 600,
             width: '100%',
-            // bind: {
-            //     store: 'myMovies'
-            // },
+            store: {
+                type: 'bufferforum'
+            },
             columns: [
                 {
                     xtype: 'checkcolumn',
                     text: 'MyCheck'
                 },
                 {
-                    xtype: 'gridcolumn',
+                    text: 'Id',
+                    width: 50,
                     dataIndex: 'id',
-                    text: 'ID'
+                    filter: {
+                        type: 'number'
+                    }
                 },
                 {
                     xtype: 'widgetcolumn',
@@ -154,19 +156,20 @@ Ext.define('SenchaThemerDemo.view.main.Email.Email', {
                     }
                 },
                 {
-                    xtype: 'numbercolumn',
-                    dataIndex: 'movies',
-                    text: 'MOVIES'
+                    text: 'First Name',
+                    width: 150,
+                    dataIndex: 'firstName'
                 },
                 {
-                    xtype: 'datecolumn',
-                    dataIndex: 'rating',
-                    text: 'RATING'
+                    text: 'Last Name',
+                    width: 150,
+                    dataIndex: 'lastName'
                 },
+                
                 {
-                    xtype: 'booleancolumn',
-                    dataIndex: 'image',
-                    text: 'IMAGE'
+                    text: 'Title',
+                    flex: 1,
+                    dataIndex: 'title'
                 },
                 {
                     xtype: 'widgetcolumn',
@@ -176,20 +179,15 @@ Ext.define('SenchaThemerDemo.view.main.Email.Email', {
                     }
                 },
                 {
-                    xtype: 'booleancolumn',
-                    dataIndex: 'image',
-                    text: 'FINE'
+                    text: 'Company',
+                    flex: 1,
+                    dataIndex: 'company'
                 },
                 {
-                    xtype: 'booleancolumn',
-                    dataIndex: 'imdb_url',
-                    text: 'IMDB'
-                },
-                {
-                    xtype: 'booleancolumn',
-                    dataIndex: 'imdb_url',
-                    text: 'HOURS'
-                }
+                    text: 'Address',
+                    flex: 1,
+                    dataIndex: 'address'
+                }, 
             ],
             plugins: [
                 {

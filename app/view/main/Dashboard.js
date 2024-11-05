@@ -9,6 +9,7 @@ Ext.define('SenchaThemerDemo.view.main.Dashboard', {
 
     width: '100%',
     height: 800,
+    margin: '0 0 0 20',
 
     items: [
         {

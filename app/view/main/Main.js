@@ -55,7 +55,8 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
                 }
             },
         ]
-    }, {
+    },
+     {
         xtype: 'container',
         layout: {
             type: 'hbox',
@@ -64,8 +65,7 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
         flex: 1,
         items: [{
             xtype: 'treepanel',
-            title: ' ',
-            width: 130,
+            width: 150,
             rootVisible: false,
             collapsible: true,
             split: true,
@@ -107,5 +107,6 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
                 }
             }
         }]
-    }]
+    }
+]
 });
