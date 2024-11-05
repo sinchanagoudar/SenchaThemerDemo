@@ -8,8 +8,8 @@ Ext.define('SenchaThemerDemo.view.main.Dashboard', {
     },
 
     width: '100%',
-    height: 600,
-    scrollable: true,
+    height: 550,
+    // scrollable: true,
 
     items: [
         {
@@ -26,7 +26,7 @@ Ext.define('SenchaThemerDemo.view.main.Dashboard', {
                     margin: '0 10 0 0'
                 },
                 {
-                    xtype: 'gridlist',
+                    xtype: 'chartItem',
                     flex: 1,
                     margin: '0 10 0 0'
                 }
@@ -45,11 +45,11 @@ Ext.define('SenchaThemerDemo.view.main.Dashboard', {
                     flex: 1,
                     margin: '10 10 0 0'
                 },
-                {
-                    xtype: 'faq',
-                    flex: 1,
-                    margin: '10 10 0 0'
-                }
+                // {
+                //     xtype: 'faq',
+                //     flex: 1,
+                //     margin: '10 10 0 0'
+                // }
             ]
         }
     ]

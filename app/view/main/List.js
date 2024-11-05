@@ -5,7 +5,7 @@ Ext.define('SenchaThemerDemo.view.main.List', {
     requires: [
         'SenchaThemerDemo.store.Personnel'
     ],
-    title: 'Infinite Grid',
+    title: 'User list',
     store: {
         type: 'bufferforum'
     },

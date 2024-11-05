@@ -7,21 +7,46 @@ Ext.define('SenchaThemerDemo.view.main.MainController', {
 
     alias: 'controller.main',
 
-    onItemSelected: function (sender, record) {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
-    },
-
-    onConfirm: function (choice) {
-        if (choice === 'yes') {
-            //
-        }
-    },
-
-    onChangeTheme:function(menu, item){debugger
+    onChangeTheme: function(menu, item){
         var themeName = item.text.toLowerCase().replace(' ', '-');
 
         localStorage.setItem('tag', themeName);
-
         window.location.reload();
+    },
+
+    menuItemClick: function (view, record) {
+        const selectedId = record.get('id');
+        const mainContentContainer = Ext.ComponentQuery.query('#maincontent')[0];
+
+        if (!mainContentContainer) {
+            console.error('Main content container not found');
+            return;
+        }
+
+        mainContentContainer.removeAll();
+        switch (selectedId) {
+            case 'home':
+                mainContentContainer.add({
+                    xtype: 'dashboard',
+                });
+                break;
+            case 'users':
+                mainContentContainer.add({
+                    xtype: 'user',
+                });
+                break;
+            case 'groups':
+                mainContentContainer.add({
+                    xtype: 'chartItem',
+                });
+                break;
+            case 'settings':
+                mainContentContainer.add({
+                    xtype: 'faq',
+                });
+                break;
+            default:
+                break;
+        }
     }
 });

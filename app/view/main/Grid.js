@@ -1,6 +1,6 @@
 Ext.define('SenchaThemerDemo.view.main.Grid', {
     extend: 'Ext.panel.Panel',
-    xtype: 'gridlist',
+    xtype: 'chartItem',
 
     requires: [
         'SenchaThemerDemo.store.Personnel',
@@ -8,42 +8,12 @@ Ext.define('SenchaThemerDemo.view.main.Grid', {
     ],
 
     title: 'Car production by largest manufacturers',
-    tbar: [
-        '->',
-        {
-            text: 'Preview',
-            platformConfig: {
-                desktop: {
-                    text: 'Download'
-                }
-            },
-            handler: function () {
-                var chart = this.lookup('chart');
-                if (Ext.isIE8) {
-                    Ext.Msg.alert('Unsupported Operation', 'This operation requires a newer version of Internet Explorer.');
-                    return;
-                }
-                if (Ext.os.is.Desktop) {
-                    chart.download({
-                        format: 'pdf',
-                        pdf: {
-                            format: 'A5',
-                            orientation: 'landscape',
-                            border: '1cm'
-                        },
-                    });
-                } else {
-                    chart.preview();
-                }
-            }
-        }
-    ],
 
     items: [{
         xtype: 'cartesian',
         reference: 'chart',
         downloadServerUrl: '//svg.sencha.io',
-        height: 300,
+        height: 230,
 
         legend: {
             type: 'sprite',
@@ -60,10 +30,6 @@ Ext.define('SenchaThemerDemo.view.main.Grid', {
         },
         theme: 'Muted',
 
-        captions: {
-            title: 'Car production by largest manufacturers',
-            credits: 'Source: International Organization of Motor Vehicle Manufacturers'
-        },
         axes: [{
             type: 'numeric',
             position: 'left',
