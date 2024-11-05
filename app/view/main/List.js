@@ -1,6 +1,3 @@
-/**
- * This view is an example list of people.
- */
 Ext.define('SenchaThemerDemo.view.main.List', {
     extend: 'Ext.grid.Panel',
     xtype: 'mainlist',
@@ -8,20 +5,52 @@ Ext.define('SenchaThemerDemo.view.main.List', {
     requires: [
         'SenchaThemerDemo.store.Personnel'
     ],
-
-    title: 'Personnel',
-
+    title: 'Infinite Grid',
+    height: 800,
     store: {
-        type: 'personnel'
+        type: 'bufferforum'
+    },
+    scrollable: true,
+    features: {
+        ftype: 'grouping'
+    },
+    plugins: {
+        gridfilters: true
     },
 
-    columns: [
-        { text: 'Name',  dataIndex: 'name' },
-        { text: 'Email', dataIndex: 'email', flex: 1 },
-        { text: 'Phone', dataIndex: 'phone', flex: 1 }
-    ],
-
-    listeners: {
-        select: 'onItemSelected'
+    columns: {
+        defaults: {
+            filter: {
+                type: 'string'
+            }
+        },
+        items: [{
+            text: 'First Name',
+            width: 150,
+            dataIndex: 'firstName'
+        }, {
+            text: 'Last Name',
+            width: 150,
+            dataIndex: 'lastName'
+        }, {
+            text: 'Id',
+            width: 50,
+            dataIndex: 'id',
+            filter: {
+                type: 'number'
+            }
+        }, {
+            text: 'Title',
+            flex: 1,
+            dataIndex: 'title'
+        }, {
+            text: 'Address',
+            flex: 1,
+            dataIndex: 'address'
+        }, {
+            text: 'Company',
+            flex: 1,
+            dataIndex: 'company'
+        }]
     }
 });

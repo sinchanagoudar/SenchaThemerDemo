@@ -15,5 +15,13 @@ Ext.define('SenchaThemerDemo.view.main.MainController', {
         if (choice === 'yes') {
             //
         }
+    },
+
+    onChangeTheme:function(menu, item){debugger
+        var themeName = item.text.toLowerCase().replace(' ', '-');
+
+        localStorage.setItem('tag', themeName);
+
+        window.location.reload();
     }
 });
