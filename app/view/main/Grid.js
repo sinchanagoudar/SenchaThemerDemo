@@ -7,7 +7,7 @@ Ext.define('SenchaThemerDemo.view.main.Grid', {
         'Ext.chart.theme.Muted'
     ],
 
-    title:'Car production by largest manufacturers',
+    title: 'Car production by largest manufacturers',
     tbar: [
         '->',
         {
@@ -17,7 +17,7 @@ Ext.define('SenchaThemerDemo.view.main.Grid', {
                     text: 'Download'
                 }
             },
-            handler: function() {
+            handler: function () {
                 var chart = this.lookup('chart');
                 if (Ext.isIE8) {
                     Ext.Msg.alert('Unsupported Operation', 'This operation requires a newer version of Internet Explorer.');
@@ -31,7 +31,6 @@ Ext.define('SenchaThemerDemo.view.main.Grid', {
                             orientation: 'landscape',
                             border: '1cm'
                         },
-                        // filename: 'Car production by largest manufacturers'
                     });
                 } else {
                     chart.preview();
@@ -44,8 +43,6 @@ Ext.define('SenchaThemerDemo.view.main.Grid', {
         xtype: 'cartesian',
         reference: 'chart',
         downloadServerUrl: '//svg.sencha.io',
-
-        width: '100%',
         height: 300,
 
         legend: {
@@ -72,7 +69,7 @@ Ext.define('SenchaThemerDemo.view.main.Grid', {
             position: 'left',
             grid: true,
             fields: ['to', 'gm', 'vw', 'hy', 'fo'],
-            renderer: function(axis, label, layoutContext) {
+            renderer: function (axis, label, layoutContext) {
                 return layoutContext.renderer(label) + '%';
             }
         }, {
@@ -103,7 +100,7 @@ Ext.define('SenchaThemerDemo.view.main.Grid', {
             },
             tooltip: {
                 trackMouse: false,
-                renderer: function(tooltip, record, item) {
+                renderer: function (tooltip, record, item) {
                     var fieldIndex = Ext.Array.indexOf(item.series.getYField(), item.field),
                         manufacturer = item.series.getTitle()[fieldIndex],
                         percent = record.get(item.field) / (

@@ -65,9 +65,9 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
             title: ' ',
             width: 130,
             rootVisible: false,
-            collapsible: true, 
-            split: true, 
-            collapseDirection: 'left', 
+            collapsible: true,
+            split: true,
+            collapseDirection: 'left',
             store: {
                 type: 'tree',
                 root: {
@@ -75,13 +75,13 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
                         { id: 'home', text: 'Home', leaf: true, iconCls: 'x-fa fa-home' },
                         { id: 'users', text: 'Users', leaf: true, iconCls: 'x-fa fa-users' },
                         { id: 'groups', text: 'Groups', leaf: true, iconCls: 'x-fa fa-users-cog' },
-                        { id: 'settings', text: 'Settings', leaf: true, iconCls: 'x-fa fa-cog' }
+                        { id: 'settings', text: 'FAQ', leaf: true, iconCls: 'x-fa fa-cog' }
                     ]
                 }
-                
+
             },
             listeners: {
-                itemclick: function(view, record) {
+                itemclick: function (view, record) {
                     const selectedId = record.get('id');
                     const mainContentContainer = Ext.ComponentQuery.query('#maincontent')[0];
 
@@ -103,9 +103,13 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
                             });
                             break;
                         case 'groups':
+                            mainContentContainer.add({
+                                xtype: 'gridlist',
+                            });
+                            break;
                         case 'settings':
                             mainContentContainer.add({
-                                xtype: 'button',
+                                xtype: 'faq',
                             });
                             break;
                         default:
@@ -119,7 +123,7 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
             itemId: 'maincontent',
             padding: '0 0 0 10',
             listeners: {
-                render: function(container) {
+                render: function (container) {
                     container.add({
                         xtype: 'dashboard'
                     });

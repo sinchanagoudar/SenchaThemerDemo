@@ -9,7 +9,6 @@ Ext.define('SenchaThemerDemo.view.main.User', {
     ],
 
     itemId: 'Profile',
-    height: 300,
     layout: 'fit',
     title: 'User Details',
     scrollable: true,

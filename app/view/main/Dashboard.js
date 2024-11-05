@@ -7,9 +7,9 @@ Ext.define('SenchaThemerDemo.view.main.Dashboard', {
         align: 'stretch'
     },
 
-    height: '600',
     width: '100%',
-    scrollable: true, 
+    height: 600,
+    scrollable: true,
 
     items: [
         {
@@ -41,12 +41,12 @@ Ext.define('SenchaThemerDemo.view.main.Dashboard', {
             flex: 1,
             items: [
                 {
-                    xtype: 'user', 
+                    xtype: 'user',
                     flex: 1,
                     margin: '10 10 0 0'
                 },
                 {
-                    xtype: 'faq', 
+                    xtype: 'faq',
                     flex: 1,
                     margin: '10 10 0 0'
                 }
