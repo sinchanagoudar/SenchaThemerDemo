@@ -94,7 +94,7 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
                     switch (selectedId) {
                         case 'home':
                             mainContentContainer.add({
-                                xtype: 'mainlist',
+                                xtype: 'dashboard',
                             });
                             break;
                         case 'users':
@@ -121,7 +121,7 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
             listeners: {
                 render: function(container) {
                     container.add({
-                        xtype: 'mainlist'
+                        xtype: 'dashboard'
                     });
                 }
             }

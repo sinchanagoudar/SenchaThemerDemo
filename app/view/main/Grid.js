@@ -1,11 +1,13 @@
 Ext.define('SenchaThemerDemo.view.main.Grid', {
-    extend: 'Ext.container.Container',
+    extend: 'Ext.panel.Panel',
     xtype: 'gridlist',
 
     requires: [
         'SenchaThemerDemo.store.Personnel',
         'Ext.chart.theme.Muted'
     ],
+
+    title:'Car production by largest manufacturers',
 
     layout: {
         type: 'vbox',
@@ -35,7 +37,7 @@ Ext.define('SenchaThemerDemo.view.main.Grid', {
                             orientation: 'landscape',
                             border: '1cm'
                         },
-                        filename: 'Car production by largest manufacturers'
+                        // filename: 'Car production by largest manufacturers'
                     });
                 } else {
                     chart.preview();
