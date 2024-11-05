@@ -47,8 +47,8 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
                         { text: 'Crisp' },
                         { text: 'Crisp Touch' },
                         { text: 'Triton' },
-                        { text: 'Graphite' },
-                        { text: 'Material' }
+                        { text: 'Light Mode' },
+                        { text: 'Dark Mode' }
                     ]
                 }
             },
@@ -73,7 +73,7 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
                 root: {
                     children: [
                         { id: 'home', text: 'Home', leaf: true, iconCls: 'x-fa fa-home' },
-                        { id: 'users', text: 'Users', leaf: true, iconCls: 'x-fa fa-users' },
+                        { id: 'users', text: 'Email', leaf: true, iconCls: 'x-fa fa-users' },
                         // { id: 'groups', text: 'Groups', leaf: true, iconCls: 'x-fa fa-users-cog' },
                         { id: 'settings', text: 'FAQ', leaf: true, iconCls: 'x-fa fa-cog' }
                     ]
