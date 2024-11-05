@@ -87,7 +87,6 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
             xtype: 'container',
             flex: 1,
             itemId: 'maincontent',
-            padding: '0 0 0 10',
             listeners: {
                 render: function (container) {
                     container.add({

@@ -60,13 +60,14 @@ Ext.define('SenchaThemerDemo.view.main.List', {
                 modal: true,
                 layout: 'fit',
                 width: 400,
-                height: 300,
+                height: 400,
                 items: [{
                     xtype: 'form',
                     bodyPadding: 10,
                     items: [
                         {
                             xtype: 'textfield',
+                            labelAlign: 'left',
                             fieldLabel: 'First Name',
                             name: 'firstName',
                             value: record.get('firstName'),
@@ -74,6 +75,7 @@ Ext.define('SenchaThemerDemo.view.main.List', {
                         },
                         {
                             xtype: 'textfield',
+                            labelAlign: 'left',
                             fieldLabel: 'Last Name',
                             name: 'lastName',
                             value: record.get('lastName'),
@@ -82,6 +84,7 @@ Ext.define('SenchaThemerDemo.view.main.List', {
                         {
                             xtype: 'textfield',
                             fieldLabel: 'ID',
+                            labelAlign: 'left',
                             name: 'id',
                             value: record.get('id'),
                             readOnly: true 
@@ -89,11 +92,13 @@ Ext.define('SenchaThemerDemo.view.main.List', {
                         {
                             xtype: 'textfield',
                             fieldLabel: 'Title',
+                            labelAlign: 'left',
                             name: 'title',
                             value: record.get('title')
                         },
                         {
                             xtype: 'textfield',
+                            labelAlign: 'left',
                             fieldLabel: 'Address',
                             name: 'address',
                             value: record.get('address')
@@ -101,6 +106,7 @@ Ext.define('SenchaThemerDemo.view.main.List', {
                         {
                             xtype: 'textfield',
                             fieldLabel: 'Company',
+                            labelAlign: 'left',
                             name: 'company',
                             value: record.get('company')
                         }

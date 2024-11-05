@@ -2,20 +2,24 @@ Ext.define('SenchaThemerDemo.Cars', {
     extend: 'Ext.data.Store',
     alias: 'store.cars',
 
-    fields: ['year', 'to', 'gm', 'vw', 'fo', 'hy'],
+    fields: ['month', 'data1', 'data2', 'data3', 'data4', 'other'],
 
     constructor: function(config) {
         config = config || {};
 
         config.data = [
-            { year: '2006', to: 6800228, gm: 5779719, vw: 5429896, fo: 3956708, hy: 2003608 },
-            { year: '2007', to: 7211474, gm: 6259520, vw: 5964004, fo: 3565626, hy: 2292075 },
-            { year: '2008', to: 7768633, gm: 6015257, vw: 6110115, fo: 3346561, hy: 2435471 },
-            { year: '2009', to: 6148794, gm: 4997824, vw: 5902583, fo: 2952026, hy: 4222532 },
-            { year: '2010', to: 7267535, gm: 6266959, vw: 7120532, fo: 2958507, hy: 5247339 },
-            { year: '2011', to: 6793714, gm: 6494385, vw: 8157058, fo: 3093893, hy: 6118221 },
-            { year: '2012', to: 8381968, gm: 6608567, vw: 8576964, fo: 3123340, hy: 6761074 },
-            { year: '2013', to: 8565176, gm: 6733192, vw: 9259506, fo: 3317048, hy: 6909194 }
+            { month: 'Jan', data1: 20, data2: 37, data3: 35, data4: 4, other: 4 },
+            { month: 'Feb', data1: 20, data2: 37, data3: 36, data4: 5, other: 2 },
+            { month: 'Mar', data1: 19, data2: 36, data3: 37, data4: 4, other: 4 },
+            { month: 'Apr', data1: 18, data2: 36, data3: 38, data4: 5, other: 3 },
+            { month: 'May', data1: 18, data2: 35, data3: 39, data4: 4, other: 4 },
+            { month: 'Jun', data1: 17, data2: 34, data3: 42, data4: 4, other: 3 },
+            { month: 'Jul', data1: 16, data2: 34, data3: 43, data4: 4, other: 3 },
+            { month: 'Aug', data1: 16, data2: 33, data3: 44, data4: 4, other: 3 },
+            { month: 'Sep', data1: 16, data2: 32, data3: 44, data4: 4, other: 4 },
+            { month: 'Oct', data1: 16, data2: 32, data3: 45, data4: 4, other: 3 },
+            { month: 'Nov', data1: 15, data2: 31, data3: 46, data4: 4, other: 4 },
+            { month: 'Dec', data1: 15, data2: 31, data3: 47, data4: 4, other: 3 }
         ];
 
         this.callParent([config]);

@@ -22,7 +22,7 @@ Ext.define('SenchaThemerDemo.view.main.Dashboard', {
             items: [
                 {
                     xtype: 'mainlist',
-                    flex: 1,
+                    flex: 2,
                     margin: '0 10 0 0'
                 },
                 {
@@ -43,7 +43,7 @@ Ext.define('SenchaThemerDemo.view.main.Dashboard', {
                 {
                     xtype: 'user',
                     flex: 1,
-                    margin: '10 10 0 0'
+                    margin: '0 10 0 0'
                 },
                 // {
                 //     xtype: 'faq',

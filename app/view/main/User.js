@@ -10,13 +10,12 @@ Ext.define('SenchaThemerDemo.view.main.User', {
 
     itemId: 'Profile',
     layout: 'fit',
-    title: 'User Details',
+    title: 'User details',
     scrollable: true,
 
     items: [{
         xtype: 'dataview',
         cls: 'profile-dataview',
-        padding: 20,
         itemSelector: 'div',
         store: {
             type: 'userstore'
@@ -24,8 +23,10 @@ Ext.define('SenchaThemerDemo.view.main.User', {
         itemTpl: [
             '<span>',
             '<img class="profile-img" src="{profileImg}"/>',
+            '<span style="margin-left: 10px; top: -20px; position: relative;">',
             '<strong>{username}</strong>',
             '<i class="x-fa fa-mobile icon"></i>',
+            '</span>',
             '</span>',
             '<span class="active-time"><span><i class="x-fa fa-clock icon clock-icon"></i>{activeTime} ago</span></span><br>',
             '{description}',
