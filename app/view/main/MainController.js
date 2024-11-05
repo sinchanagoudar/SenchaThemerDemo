@@ -30,19 +30,69 @@ Ext.define('SenchaThemerDemo.view.main.MainController', {
                     xtype: 'dashboard',
                 });
                 break;
-            case 'users':
+            case 'email':
                 mainContentContainer.add({
-                    xtype: 'user',
+                    xtype: 'email',
                 });
                 break;
             case 'groups':
                 mainContentContainer.add({
-                    xtype: 'chartItem',
+                    xtype: 'groups',
                 });
                 break;
             case 'settings':
                 mainContentContainer.add({
                     xtype: 'faq',
+                });
+                break;
+            case 'notifications':
+                mainContentContainer.add({
+                    xtype: 'notifications',
+                });
+                break;
+            case 'analytics':
+                mainContentContainer.add({
+                    xtype: 'groups',
+                });
+                break;
+            case 'reports':
+                mainContentContainer.add({
+                    xtype: 'notifications',
+                });
+                break;
+            case 'calendar':
+                mainContentContainer.add({
+                    xtype: 'groups',
+                });
+                break;
+            case 'tasks':
+                mainContentContainer.add({
+                    xtype: 'notifications',
+                });
+                break;
+            case 'projects':
+                mainContentContainer.add({
+                    xtype: 'groups',
+                });
+                break;
+            case 'contacts':
+                mainContentContainer.add({
+                    xtype: 'notifications',
+                });
+                break;
+            case 'support':
+                mainContentContainer.add({
+                    xtype: 'groups',
+                });
+                break;
+            case 'profile':
+                mainContentContainer.add({
+                    xtype: 'notifications',
+                });
+                break;
+            case 'logout':
+                mainContentContainer.add({
+                    xtype: 'groups',
                 });
                 break;
             default:
