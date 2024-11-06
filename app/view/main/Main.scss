@@ -72,7 +72,6 @@
     }
 
     .x-menu-header {
-        background-color: #fff;
         padding: 10px;
 
         .x-title-icon-wrap {
@@ -107,15 +106,6 @@
     }
 }
 
-.x-autocontainer-innerCt {
-    color: #404040;
-    font-size: 13px;
-    line-height: 17px;
-    font-weight: 400;
-    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
-    background: #f6f6f6;
-}
-
 .navigation-Friends {
     border: none;
 
@@ -125,7 +115,6 @@
 
     .x-menu-header {
         line-height: 20px;
-        background-color: #fff;
         padding: 10px;
 
         .x-title-icon-wrap {
@@ -174,10 +163,6 @@
 }
 
 .Navigation-sidebar {
-    .x-panel-header-default {
-        background-color: white !important;
-    }
-
     .x-tool-collapse-left:before,
     .x-tool-expand-right:before {
         content: "\f0c9";
@@ -201,3 +186,4 @@
         padding: 6px;
     }
 }
+

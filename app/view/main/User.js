@@ -7,6 +7,7 @@ Ext.define('SenchaThemerDemo.view.main.User', {
         'Ext.XTemplate',
         'SenchaThemerDemo.store.UserStore'
     ],
+    margin:'10 0 0 0',
 
     itemId: 'Profile',
     layout: 'fit',
