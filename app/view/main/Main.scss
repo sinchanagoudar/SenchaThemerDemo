@@ -5,19 +5,6 @@
     line-height: 24px;
 }
 
-.x-tab-icon-el-navigation {
-    font-family: 'Font Awesome 5 Free';
-    color: #acacac;
-
-    .x-tab-over & {
-        color: #c4c4c4;
-    }
-
-    .x-tab-active & {
-        color: #fff;
-    }
-}
-
 .x-panel-header-title-navigation>.x-title-text-navigation:after {
     top: 30px;
     right: -24px;
@@ -137,7 +124,6 @@
     font: 400 13px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
     line-height: 31px;
     padding-top: 1px;
-    color: #000;
     cursor: pointer;
 }
 
