@@ -1,6 +1,7 @@
 Ext.define('SenchaThemerDemo.view.main.List', {
     extend: 'Ext.grid.Panel',
     xtype: 'mainlist',
+    cls:'custom-grid',
 
     requires: [
         'SenchaThemerDemo.store.Personnel'

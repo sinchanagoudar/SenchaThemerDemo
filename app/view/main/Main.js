@@ -69,6 +69,8 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
         items: [{
             xtype: 'treepanel',
             width: 200,
+            title:'Sencha',
+            cls:'Navigation-sidebar',
             rootVisible: false,
             collapsible: true,
             split: true,
@@ -102,6 +104,7 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
             xtype: 'container',
             scrollable: 'y',
             flex: 1,
+            margin:'0 0 0 6px',
             itemId: 'maincontent',
             listeners: {
                 render: function (container) {

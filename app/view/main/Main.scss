@@ -63,24 +63,13 @@
     margin-top: auto;
 }
 
-
-
-.x-panel-body-default {
-    background: f6f6f6;
-
-}
-
 .navigation-email {
     // @include box-shadow(0px,2px,8px,0px,rgba(0,0,0,.15));
     @include box-shadow(0, 1px, 2px, 0, rgba(0, 0, 0, 0.2));
 
-
     &.x-menu-default {
         border-width: 0;
     }
-    
-   
-
 
     .x-menu-header {
         background-color: #fff;
@@ -127,8 +116,6 @@
     background: #f6f6f6;
 }
 
-
-
 .navigation-Friends {
     border: none;
 
@@ -151,9 +138,6 @@
             font-size: 16px;
         }
     }
-
-
-
 }
 
 .navigation-friends-container {
@@ -176,14 +160,44 @@
     padding: 13px;
 }
 
-.x-grid-body{
-    border:none;
+.x-grid-body {
+    border: none;
 }
 
 .x-tree-icon-custom {
     background-image: none;
     margin-right: 10px;
 }
+
 .navigation-email .x-menu-item-icon-default {
     color: #919191ad;
+}
+
+.Navigation-sidebar {
+    .x-panel-header-default {
+        background-color: white !important;
+    }
+
+    .x-tool-collapse-left:before,
+    .x-tool-expand-right:before {
+        content: "\f0c9";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 16px;
+    }
+
+    .x-tool-expand-right {
+        background: none;
+        width: 24px;
+        height: 24px;
+    }
+    .x-title-text-default{
+        text-align: center;
+    }
+}
+
+.custom-grid{
+    .x-grid-cell-inner{
+        padding: 6px;
+    }
 }
