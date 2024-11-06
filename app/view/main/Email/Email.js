@@ -19,7 +19,6 @@ Ext.define('SenchaThemerDemo.view.main.Email.Email', {
     ],
 
     itemId: 'emailMainContainer',
-    margin: '0 0 0 20',
 
     layout: {
         type: 'hbox',
@@ -53,9 +52,6 @@ Ext.define('SenchaThemerDemo.view.main.Email.Email', {
                                     xtype: 'menuitem',
                                     iconCls: 'x-fa fa-edit',
                                     text: 'Compose',
-                                    listeners: {
-                                        click: 'onComposeClick'
-                                    }
                                 },
                                 {
                                     xtype: 'menuitem',

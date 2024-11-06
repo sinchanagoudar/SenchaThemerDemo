@@ -8,7 +8,6 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
     },
     width: '100%',
     height: '100%',
-    margin: '0 0 0 20',
 
     items: [
         {
@@ -26,6 +25,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                         xtype: 'panel',
                         collapsible: true,
                         collapsed: false,
+                        margin:'10 0 0 0'
                     },
                     items: [
                         {

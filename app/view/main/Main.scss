@@ -78,6 +78,8 @@
     &.x-menu-default {
         border-width: 0;
     }
+    
+   
 
 
     .x-menu-header {
@@ -112,33 +114,6 @@
             .x-menu-item-text-default.x-menu-item-indent-no-separator {
                 margin-left: 18px;
             }
-
-            .x-menu-item-link:after {
-                color: black;
-                content: "\f531";
-            }
-
-            &.x-menu-item-active {
-                .x-menu-item-link:after {
-                    color: white;
-                }
-            }
-        }
-
-        &.offline-user {
-            .x-menu-item-link:after {
-                color: black;
-                content: "\f531";
-            }
-
-            .x-menu-item-text-default.x-menu-item-indent-no-separator {
-                margin-left: 20px;
-            }
-        }
-
-        .x-menu-item-link:after {
-            color: black;
-            content: "\f105";
         }
     }
 }
@@ -203,4 +178,12 @@
 
 .x-grid-body{
     border:none;
+}
+
+.x-tree-icon-custom {
+    background-image: none;
+    margin-right: 10px;
+}
+.navigation-email .x-menu-item-icon-default {
+    color: #919191ad;
 }

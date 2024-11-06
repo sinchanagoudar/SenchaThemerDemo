@@ -27,11 +27,14 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
         items: [
             {
                 xtype: 'image',
-                src: 'resources/images/cel_logo.png',
-                width: 150,
-                height: 50,
+                src: 'https://examples.sencha.com/img/logo.png',
+                height: 30,
                 alt: 'Company Logo',
-                margin: '0 10 0 0'
+                margin: '20 0 0 0'
+            },
+            {
+                html: 'Sencha Themer Explorer',
+                margin: '20 0 0 0'
             },
             '->',
             {
@@ -65,7 +68,7 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
         flex: 1,
         items: [{
             xtype: 'treepanel',
-            width: 150,
+            width: 200,
             rootVisible: false,
             collapsible: true,
             split: true,
