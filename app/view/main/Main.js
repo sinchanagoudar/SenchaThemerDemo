@@ -46,14 +46,9 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
                         click: 'onChangeTheme'
                     },
                     items: [
-                        { text: 'Classic' },
-                        { text: 'Neptune' },
-                        { text: 'Neptune Touch' },
-                        { text: 'Crisp' },
-                        { text: 'Crisp Touch' },
-                        { text: 'Triton' },
-                        { text: 'Light Mode' },
-                        { text: 'Dark Mode' }
+                        { text: 'Custom' },
+                        { text: 'Basic Material' },
+                        { text: 'Dark' },
                     ]
                 }
             },

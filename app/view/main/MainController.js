@@ -8,7 +8,14 @@ Ext.define('SenchaThemerDemo.view.main.MainController', {
     alias: 'controller.main',
 
     onChangeTheme: function(menu, item){
-        var themeName = item.text.toLowerCase().replace(' ', '-');
+        var themeName;
+ 
+        if (item.text == 'Basic Material') {
+            themeName = 'material'
+        }
+        else if (item.text == 'Custom') {
+            themeName = 'custom'
+        }
 
         localStorage.setItem('tag', themeName);
         window.location.reload();

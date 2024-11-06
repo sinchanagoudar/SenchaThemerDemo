@@ -3,8 +3,6 @@
     "namespace": "SenchaThemerDemo",
     "version": "1.0.0.0",
     "framework": "ext",
-    "toolkit": "classic",
-    "theme": "Custom",
     /**
      * The list of required packages (with optional versions; default is "latest").
      *
@@ -363,12 +361,15 @@
      *      }
      *
      */
-    "output": {
-        "base": "${workspace.build.dir}/${build.environment}/${app.name}",
-        "appCache": {
-            "enable": false
-        }
-    },
+"output": {
+    "base": "${workspace.build.dir}/${build.environment}/${app.name}",
+    "page": "index.html",
+    "manifest": "${build.id}.json",
+    "js": "${build.id}/app.js",
+    "appCache": {
+      "enable": false
+    }
+  },
     /**
     * Controls for localStorage caching
     *   "cache": {
@@ -453,6 +454,16 @@
      * names.
      *
      */
+     "builds": {
+        "material": {
+          "toolkit": "classic",
+          "theme": "theme-material"
+        },
+        "custom": {
+          "toolkit": "classic",
+          "theme": "Custom"
+        }
+      },
     /**
      * File / directory name patttern to ignore when copying to the builds. Must be a
      * valid regular expression.
