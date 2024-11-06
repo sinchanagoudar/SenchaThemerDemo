@@ -1,5 +1,5 @@
 Ext.define('SenchaThemerDemo.view.main.FAQ', {
-    extend: 'Ext.container.Container',
+    extend: 'Ext.panel.Panel',
     xtype: 'faq',
 
     layout: {
@@ -7,7 +7,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
         align: 'stretch'
     },
     width: '100%',
-    height: '100%',
+    height: 800,
 
     items: [
         {
