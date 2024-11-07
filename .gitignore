@@ -5,4 +5,5 @@ modern.json*
 .sencha
 ext
 packages/local/darktheme/build
+packages/local/Custom/build
 

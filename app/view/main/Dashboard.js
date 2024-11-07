@@ -8,7 +8,7 @@ Ext.define('SenchaThemerDemo.view.main.Dashboard', {
     },
 
     width: '100%',
-    height: 550,
+    height:630,
     scrollable: 'y',
 
     defaults: {

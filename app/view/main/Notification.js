@@ -3,7 +3,7 @@ Ext.define('SenchaThemerDemo.view.main.Notification', {
     xtype: 'notifications',
 
     width: '100%',
-    height: 550,
+    height: 630,
 
     layout: {
         type: 'vbox',
