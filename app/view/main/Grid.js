@@ -16,7 +16,7 @@ Ext.define('SenchaThemerDemo.view.main.Grid', {
         xtype: 'polar',
         reference: 'chart',
         width: '100%',
-        height: 250,
+        height: 280,
         legend: {
             docked: 'bottom'
         },

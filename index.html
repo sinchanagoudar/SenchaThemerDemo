@@ -1,26 +1,22 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html manifest="">
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes"
+    />
 
     <title>SenchaThemerDemo</title>
-    <script type="text/javascript">
-        var Ext = Ext || {}; // Initialize the Ext namespace if not already defined
-   
-        Ext.beforeLoad = function (tags) {
-          // Retrieve the saved theme name or default to 'material'
-          const theme = localStorage.getItem("tag") || "material";
-   
-          // Set Ext.manifest to the profile name directly, e.g., 'material' or 'custom'
-          Ext.manifest = theme;
-        };
-      </script>
 
     <!-- The line below must be kept intact for Sencha Cmd to build your application -->
-    <script id="microloader" data-app="d71048b3-0e40-4f31-b87c-2956c61c75af" type="text/javascript" src="bootstrap.js"></script>
-
-</head>
-<body></body>
+    <script
+      id="microloader"
+      data-app="d71048b3-0e40-4f31-b87c-2956c61c75af"
+      type="text/javascript"
+      src="bootstrap.js"
+    ></script>
+  </head>
+  <body></body>
 </html>

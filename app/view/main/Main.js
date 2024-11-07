@@ -30,7 +30,7 @@ Ext.define('SenchaThemerDemo.view.main.Main', {
                 src: 'https://examples.sencha.com/img/logo.png',
                 height: 30,
                 alt: 'Company Logo',
-                margin: '20 0 0 0'
+                margin: '20 20 0 0'
             },
             {
                 html: 'Sencha Themer Explorer',

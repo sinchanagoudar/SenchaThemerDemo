@@ -1,5 +1,5 @@
 Ext.define('SenchaThemerDemo.view.main.Dashboard', {
-    extend: 'Ext.panel.Panel',
+    extend: 'Ext.container.Container',
     xtype: 'dashboard',
 
     layout: {
@@ -8,7 +8,7 @@ Ext.define('SenchaThemerDemo.view.main.Dashboard', {
     },
 
     width: '100%',
-    height: 600,
+    height: 650,
     scrollable: 'y',
 
     defaults: {
@@ -18,7 +18,7 @@ Ext.define('SenchaThemerDemo.view.main.Dashboard', {
             align: 'stretch'
         },
         flex: 1,
-        height: 300,
+        height: 325,
     },
 
     items: [
@@ -26,13 +26,15 @@ Ext.define('SenchaThemerDemo.view.main.Dashboard', {
             items: [
                 {
                     xtype: 'mainlist',
+                    cls: 'panelStyle',
                     flex: 2,
-                    margin: '0 10 0 0'
+                    margin: 5
                 },
                 {
                     xtype: 'chartItem',
+                    cls: 'panelStyle',
                     flex: 1,
-                    margin: '0 10 0 0'
+                    margin: 5
                 }
             ]
         },
@@ -40,8 +42,9 @@ Ext.define('SenchaThemerDemo.view.main.Dashboard', {
             items: [
                 {
                     xtype: 'user',
+                    cls: 'panelStyle',
                     flex: 1,
-                    margin: '0 10 0 0'
+                    margin: 5
                 },
             ]
         }
