@@ -362,7 +362,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                                             <img src="https://media.istockphoto.com/id/1406197730/photo/portrait-of-a-young-handsome-indian-man.webp?a=1&b=1&s=612x612&w=0&k=20&c=MfdvUjMRNMRgW8DfvlEMiFjm8vcJW_2BC2FFWcm2unI=" alt="Sarah White" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
                                             <div>
                                                 <strong>Jonny Dip</strong>
-                                                <p style="margin: 5px 0;">"Unmatched experience! I couldn’t be more satisfied with the outcome."</p>
+                                                <p style="margin: 5px 0;">"Unmatched experience! I couldn’t be more satisfied."</p>
                                             </div>
                                         </div>
                                     `
