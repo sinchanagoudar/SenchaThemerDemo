@@ -162,6 +162,7 @@
              */
             "var": [
                 "${package.dir}/sass/var",
+                "${package.dir}/sass/var/*",
                 "${package.dir}/sass/var/sencha-themer-defaults.scss",
                 "${package.dir}/sass/var/themer-ui-variables.scss"
             ],
@@ -182,7 +183,8 @@
              *      +-----------------+
              */
             "src": [
-                "${package.dir}/sass/src",
+                "${package.dir}/sass/src/",
+                "${package.dir}/sass/src/mystyle.scss",
                 "${package.dir}/sass/src/sencha-themer-defaults.scss"
             ],
             "generated": {

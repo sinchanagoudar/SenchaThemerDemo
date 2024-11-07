@@ -3,7 +3,7 @@ Ext.define('SenchaThemerDemo.view.main.Groups', {
     xtype: 'groups',
 
     width: '100%',
-    height: 800,
+    height: 550,
 
     layout: {
         type: 'vbox',
