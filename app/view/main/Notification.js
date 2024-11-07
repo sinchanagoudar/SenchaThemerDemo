@@ -1,9 +1,9 @@
 Ext.define('SenchaThemerDemo.view.main.Notification', {
-    extend: 'Ext.container.Container',
+    extend: 'Ext.panel.Panel',
     xtype: 'notifications',
 
     width: '100%',
-    height: 600,
+    height: 550,
 
     layout: {
         type: 'vbox',

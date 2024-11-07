@@ -1,6 +1,8 @@
 /build
-bootstrap.*
+# bootstrap.*
 classic.json*
 modern.json*
 .sencha
 ext
+packages/local/darktheme/build
+

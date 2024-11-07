@@ -4,7 +4,8 @@
      */
     "apps": [
         "",
-        "packages/local/Custom/.sencha/temp/Themer"
+        "packages/local/Custom/.sencha/temp/Themer",
+        "packages/local/darktheme/.sencha/temp/Themer"
     ],
 
     /**

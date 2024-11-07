@@ -60,11 +60,11 @@ Ext.define('SenchaThemerDemo.view.main.List', {
                 title: 'Edit Person Details',
                 modal: true,
                 layout: 'fit',
-                width: 400,
-                height: 400,
+                width: 450,
+                height: 450,
                 items: [{
                     xtype: 'form',
-                    bodyPadding: 10,
+                    bodyPadding: 50,
                     items: [
                         {
                             xtype: 'textfield',

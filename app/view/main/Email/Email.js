@@ -2,6 +2,8 @@ Ext.define('SenchaThemerDemo.view.main.Email.Email', {
     extend: 'Ext.container.Container',
     xtype: 'email',
 
+    height:620,
+
     requires: [
         'Ext.menu.Menu',
         'Ext.menu.Item',

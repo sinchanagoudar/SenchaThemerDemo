@@ -3,6 +3,7 @@ Ext.define('SenchaThemerDemo.view.main.Grid', {
     xtype: 'chartItem',
 
     controller: 'main',
+    margin:'20 0 0 0',
 
     requires: [
         'SenchaThemerDemo.store.Personnel',
