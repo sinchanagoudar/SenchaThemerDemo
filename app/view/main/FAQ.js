@@ -362,7 +362,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                                             <img src="https://media.istockphoto.com/id/1406197730/photo/portrait-of-a-young-handsome-indian-man.webp?a=1&b=1&s=612x612&w=0&k=20&c=MfdvUjMRNMRgW8DfvlEMiFjm8vcJW_2BC2FFWcm2unI=" alt="Sarah White" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
                                             <div>
                                                 <strong>Jonny Dip</strong>
-                                                <p style="margin: 5px 0;">"Unmatched experience! I couldn’t be more satisfied with the outcome."</p>
+                                                <p style="margin: 5px 0;">"Unmatched experience! I couldn’t be more satisfied."</p>
                                             </div>
                                         </div>
                                     `
@@ -378,7 +378,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                                             <img src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=" alt="Sarah White" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
                                             <div>
                                                 <strong>Khloe kim</strong>
-                                                <p style="margin: 5px 0;">"I'm extremely satisfied with the results"</p>
+                                                <p style="margin: 5px 0;">"I'm extremely satisfied with the results and the outcome."</p>
                                             </div>
                                         </div>
                                     `
