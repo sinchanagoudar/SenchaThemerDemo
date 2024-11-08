@@ -18,9 +18,12 @@ Ext.define('SenchaThemerDemo.view.main.User', {
         xtype: 'dataview',
         cls: 'profile-dataview',
         itemSelector: 'div',
+         scrollable: 'y',
+
         store: {
             type: 'userstore'
         },
+
         itemTpl: [
             '<span>',
             '<img class="profile-img" src="{profileImg}"/>',
@@ -32,7 +35,6 @@ Ext.define('SenchaThemerDemo.view.main.User', {
             '<span class="active-time"><span><i class="x-fa fa-clock icon clock-icon"></i>{activeTime} ago</span></span><br>',
             '{description}',
             '<span class="activity-icons"><span><i class="x-fa fa-thumbs-up icon"></i><i class="x-fa fa-thumbs-down icon"></i><i class="x-fa fa-wechat icon"></i></span></span>'
-        ],
-        scrollable: 'y'
+        ]
     }]
 });

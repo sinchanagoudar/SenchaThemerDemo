@@ -162,9 +162,9 @@
              */
             "var": [
                 "${package.dir}/sass/var",
-                "${package.dir}/sass/var/*",
                 "${package.dir}/sass/var/sencha-themer-defaults.scss",
-                "${package.dir}/sass/var/themer-ui-variables.scss"
+                "${package.dir}/sass/var/themer-ui-variables.scss",
+                 "${package.dir}/sass/var/darkthemevar.scss"
             ],
             /**
              * Comma-separated list of folders containing Sass rule files.

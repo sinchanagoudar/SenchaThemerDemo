@@ -4,7 +4,6 @@
  */
 Ext.define('SenchaThemerDemo.view.main.MainController', {
     extend: 'Ext.app.ViewController',
-
     alias: 'controller.main',
 
     onChangeTheme: function(menu, item){
@@ -21,9 +20,87 @@ Ext.define('SenchaThemerDemo.view.main.MainController', {
         window.location.reload();
     },
 
+    editRecord: function (grid, record) {
+        var editWindow = Ext.create('Ext.window.Window', {
+            title: 'Edit Person Details',
+            modal: true,
+            layout: 'fit',
+            width: 450,
+            height: 450,
+            items: [{
+                xtype: 'form',
+                bodyPadding: 50,
+                items: [
+                    {
+                        xtype: 'textfield',
+                        labelAlign: 'left',
+                        fieldLabel: 'First Name',
+                        name: 'firstName',
+                        value: record.get('firstName'),
+                        allowBlank: false
+                    },
+                    {
+                        xtype: 'textfield',
+                        labelAlign: 'left',
+                        fieldLabel: 'Last Name',
+                        name: 'lastName',
+                        value: record.get('lastName'),
+                        allowBlank: false
+                    },
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: 'ID',
+                        labelAlign: 'left',
+                        name: 'id',
+                        value: record.get('id'),
+                        readOnly: true 
+                    },
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: 'Title',
+                        labelAlign: 'left',
+                        name: 'title',
+                        value: record.get('title')
+                    },
+                    {
+                        xtype: 'textfield',
+                        labelAlign: 'left',
+                        fieldLabel: 'Address',
+                        name: 'address',
+                        value: record.get('address')
+                    },
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: 'Company',
+                        labelAlign: 'left',
+                        name: 'company',
+                        value: record.get('company')
+                    }
+                ]
+            }],
+            buttons: [{
+                text: 'Save',
+                handler: function (btn) {
+                    var form = btn.up('window').down('form').getForm();
+                    if (form.isValid()) {
+                        record.set(form.getValues());
+                        btn.up('window').close();
+                    } else {
+                        Ext.Msg.alert('Invalid Data', 'Please correct form errors.');
+                    }
+                }
+            }, {
+                text: 'Close',
+                handler: function (btn) {
+                    btn.up('window').close();
+                }
+            }]
+        }).show();
+    },
+
     menuItemClick: function (view, record) {
-        const selectedId = record.get('id');
-        const mainContentContainer = Ext.ComponentQuery.query('#maincontent')[0];
+        var selectedId = record.get('id'),
+            mainContentContainer = Ext.ComponentQuery.query('#maincontent')[0];
 
         if (!mainContentContainer) {
             console.error('Main content container not found');
@@ -131,11 +208,6 @@ Ext.define('SenchaThemerDemo.view.main.MainController', {
     },
 
     onAxisLabelRender: function(axis, label, layoutContext) {
-        // Custom renderer overrides the native axis label renderer.
-        // Since we don't want to do anything fancy with the value
-        // ourselves except appending a '%' sign, but at the same time
-        // don't want to loose the formatting done by the native renderer,
-        // we let the native renderer process the value first.
         return layoutContext.renderer(label) + '%';
     },
 

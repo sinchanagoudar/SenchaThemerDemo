@@ -163,7 +163,8 @@
             "var": [
                 "${package.dir}/sass/var",
                 "${package.dir}/sass/var/sencha-themer-defaults.scss",
-                "${package.dir}/sass/var/themer-ui-variables.scss"
+                "${package.dir}/sass/var/themer-ui-variables.scss",
+                "${package.dir}/sass/var/Customvar.scss"
             ],
             /**
              * Comma-separated list of folders containing Sass rule files.
@@ -267,20 +268,20 @@
                     "variable": "base_color",
                     "displayName": "Base Color",
                     "order": 0,
-                    "r": 15,
-                    "g": 137,
-                    "b": 72,
-                    "a": 1,
-                    "h": 0.41120218579234974,
-                    "s": 0.8905109489051095,
-                    "v": 0.5372549019607843,
+                    "r": 53,
+                    "g": 133,
+                    "b": 122,
+                    "a": 0.88671875,
+                    "h": 0.4770833333333334,
+                    "s": 0.6015037593984962,
+                    "v": 0.5215686274509804,
                     "id": "178ed4a4-6496-499e-a8d4-1b4f1a62a5ee",
                     "transparent": false,
                     "sass": "",
                     "base": true,
-                    "tooltip": "<b>Base Color</b><br/>#0F8948",
-                    "rgba": "rgba(15, 137, 72, 1)",
-                    "hex": "#0F8948"
+                    "tooltip": "<b>Base Color</b><br/>#35857A",
+                    "rgba": "rgba(53, 133, 122, 0.88671875)",
+                    "hex": "#35857A"
                 },
                 {
                     "variable": "body_background_color",

@@ -1,79 +1,74 @@
-$text-color: #333;
-
 .x-body{
-    background-color: #121212 !important;
-    color: #DDDDDD;
+    background-color: $darktheme-base-color !important;
+    color: $darktheme-font-color;
 }
 
 .profile-dataview .x-dataview-item {
     border-style: solid;
     border-width: 1px 0 0;
-    border-color: #3e3737 !important;
+    border-color: $darktheme-border-color !important;
 }
 
 .testimonial-panel {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-style: solid;
-    border-width: 1px; /* Apply border on all sides */
-    border-color: #3e3737 !important;
-    padding: 15px; /* Ensure content spacing */
-    margin: 10px 0; /* Ensure there is space between panels */
+    border-width: 1px;
+    border-color: $darktheme-border-color !important;
+    padding: 15px; 
+    margin: 10px 0; 
 }
 
 .testimonial-panel:hover {
-    // transform: translateY(-10px); /* Move the panel up slightly */
-    box-shadow: 0px 4px 15px  #555555; /* Add a shadow on hover */
+    box-shadow: 0px 4px 15px  $darktheme-secondary-color; /* Add a shadow on hover */
 }
 .x-toolbar-footer {
-    background-color:#121212 ;
+    background-color: $darktheme-base-color ;
 }
 .x-column-header-over, .x-column-header-trigger{
-    background-color: #555555;
-    color: #DDDDDD;
+    background-color: $darktheme-secondary-color;
+    color: $darktheme-font-color;
 }
 
-/* Dark theme scrollbar for Ext JS */
 /* Webkit scrollbar styling for dark theme */
 .x-scroller::-webkit-scrollbar {
-    width: 8px !important;   /* Thin vertical scrollbar */
-    height: 8px !important;  /* Thin horizontal scrollbar */
+    width: 8px !important;   
+    height: 8px !important;  
 }
 
 .x-scroller::-webkit-scrollbar-track {
-    background: #1a1a1a !important; /* Dark track */
+    background: $darktheme-secondary-base-color !important; 
     border-radius: 5px;
 }
 
 .x-scroller::-webkit-scrollbar-thumb {
-    background: #444444 !important; /* Dark thumb */
+    background: $darktheme-scrollbar-base-color !important; 
     border-radius: 5px;
 }
 
 .x-scroller::-webkit-scrollbar-thumb:hover {
-    background: #666666 !important; /* Lighter thumb on hover */
+    background: $darktheme-scrollbar-thumb-color !important; 
 }
 
 .x-scroller::-webkit-scrollbar-corner {
-    background: #1a1a1a !important;
+    background: $darktheme-secondary-base-color !important;
 }
 
 .x-menu-body-default {
-    background: #1f1f1f;
+    background: $darktheme-dark-color;
     padding: 8px 0;
     height: 42vh;
 }
 
 .card {
-    background-color: #121212 !important;
-    color:#DDDDDD !important;
+    background-color: $darktheme-base-color !important;
+    color:$darktheme-font-color !important;
 }
 
 
 .card {
-    background-color: #f9f9f9;
     border-style: solid;
     border-width: 1px 0 0;
-    border-color: #3e3737 !important;
+    border-color: $darktheme-border-color !important;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -93,8 +88,7 @@ $text-color: #333;
 }
 
 .card {
-    // background-color: #f9f9f9;
-    border: 1px solid #DDDDDD;
+    border: 1px solid $darktheme-font-color;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
@@ -103,7 +97,6 @@ $text-color: #333;
 }
 
 .card:hover {
-    // transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -111,20 +104,47 @@ $text-color: #333;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #ddd;
+    color: $darktheme-card-title-color;
     text-align: center;
 }
 
 .card-content {
     font-size: 14px;
-    color: #ddd;
+    color: $darktheme-card-title-color;
     line-height: 1.6;
 }
 
 .x-tab-bar-default {
-    background-color: #121212;
+    background-color: $darktheme-base-color;
 }
 
 .x-tab.x-tab-active.x-tab-default {
     border-radius: 0px;
+}
+.navigation-Friends .x-menu-header, .navigation-email .x-menu-header{
+    background-color: $darktheme-dark-color;
+}
+
+:root {
+    --theme-color: #555555;
+    --bg-color: rgba(79, 48, 183, 0.06);
+    --comp-color: #555555;
+    --gradient: linear-gradient(#555555 0%, #555555 100%);
+}
+
+.testimonials{
+    .x-panel-body-default {
+        color:  $darktheme-font-color;
+    }
+}
+.text-white, .read{
+    color:  $darktheme-font-color !important;
+}
+
+.review-box {
+    border-radius: 3px;
+    background: $darktheme-base-color !important;
+    box-shadow: 0px 3px 20px #555555 !important;
+    padding: 30px;
+    border-bottom: 1px solid #555555 !important;
 }
