@@ -236,13 +236,13 @@
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #333;
+    color: $text-color;
     text-align: center;
 }
 
 .card-content {
     font-size: 14px;
-    color: #555;
+    color: $text-color;
     line-height: 1.6;
 }
 

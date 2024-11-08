@@ -186,11 +186,11 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                     scrollable: true,
                     defaults: {
                         xtype: 'container',
+                        height: 150,
                         layout: {
                             type: 'hbox',
                             align: 'stretch'
                         },
-                        flex: 1
                     },
                     items: [
                         {
@@ -198,7 +198,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                                 {
                                     xtype: 'panel',
                                     flex: 1,
-                                    margin: '0 10 10 0',
+                                    cls: 'cardPanel',
                                     border: true,
                                     bodyPadding: 15,
                                     html: `
@@ -215,7 +215,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                                     xtype: 'panel',
                                     flex: 1,
                                     height:150,
-                                    margin: '0 10 10 0',
+                                    cls: 'cardPanel',
                                     border: true,
                                     bodyPadding: 15,
                                     html: `
@@ -231,7 +231,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                                 {
                                     xtype: 'panel',
                                     flex: 1,
-                                    margin: '0 10 10 0',
+                                    cls: 'cardPanel',
                                     border: true,
                                     height:150,
                                     bodyPadding: 15,
@@ -248,7 +248,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                                 {
                                     xtype: 'panel',
                                     flex: 1,
-                                    margin: '0 10 10 0',
+                                    cls: 'cardPanel',
                                     border: true,
                                     height:150,
                                     bodyPadding: 15,
@@ -270,7 +270,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                                 {
                                     xtype: 'panel',
                                     flex: 1,
-                                    margin: '0 10 10 0',
+                                    cls: 'cardPanel',
                                     border: true,
                                     bodyPadding: 15,
                                     html: `
@@ -286,7 +286,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                                 {
                                     xtype: 'panel',
                                     flex: 1,
-                                    margin: '0 10 10 0',
+                                    cls: 'cardPanel',
                                     border: true,
                                     bodyPadding: 15,
                                     html: `
@@ -302,7 +302,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                                 {
                                     xtype: 'panel',
                                     flex: 1,
-                                    margin: '0 10 10 0',
+                                    cls: 'cardPanel',
                                     border: true,
                                     bodyPadding: 15,
                                     html: `
@@ -318,7 +318,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                                 {
                                     xtype: 'panel',
                                     flex: 1,
-                                    margin: '0 10 10 0',
+                                    cls: 'cardPanel',
                                     border: true,
                                     bodyPadding: 15,
                                     html: `
@@ -338,7 +338,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                                 {
                                     xtype: 'panel',
                                     flex: 1,
-                                    margin: '0 10 10 0',
+                                    cls: 'cardPanel',
                                     border: true,
                                     bodyPadding: 15,
                                     html: `
@@ -354,7 +354,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                                 {
                                     xtype: 'panel',
                                     flex: 1,
-                                    margin: '0 10 10 0',
+                                    cls: 'cardPanel',
                                     border: true,
                                     bodyPadding: 15,
                                     html: `
@@ -370,7 +370,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                                 {
                                     xtype: 'panel',
                                     flex: 1,
-                                    margin: '0 10 10 0',
+                                    cls: 'cardPanel',
                                     border: true,
                                     bodyPadding: 15,
                                     html: `
@@ -386,7 +386,7 @@ Ext.define('SenchaThemerDemo.view.main.FAQ', {
                                 {
                                     xtype: 'panel',
                                     flex: 1,
-                                    margin: '0 10 10 0',
+                                    cls: 'cardPanel',
                                     border: true,
                                     bodyPadding: 15,
                                     html: `

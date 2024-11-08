@@ -11,18 +11,25 @@
 }
 
 .cardPanel { 
+    height: 140px !important;
     box-shadow: 1px 1px 4px 1px lightgray;
     border-radius: 5px;
+    margin: 10px;
 
     .x-panel-body-default{
         border-radius: 5px;
+        height: 150px !important;
     }
 
     strong {
-        color: #636d74;
+        color: $text-color;
     }
     
     p {
-        color: #636d74;
+        color: $text-color;
+    }
+
+    .x-panel-default-outer-border-trbl {
+        height: 140px !important;
     }
 }
