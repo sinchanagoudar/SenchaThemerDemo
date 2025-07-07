@@ -9,6 +9,7 @@ Ext.define('SenchaThemerDemo.view.main.MainController', {
 
     onChangeTheme: function(menu, item){
         var themeName;
+        var themeName;
  
         if (item.text == 'Basic Material') {
             themeName = 'material'
@@ -22,8 +23,8 @@ Ext.define('SenchaThemerDemo.view.main.MainController', {
     },
 
     menuItemClick: function (view, record) {
-        const selectedId = record.get('id');
-        const mainContentContainer = Ext.ComponentQuery.query('#maincontent')[0];
+        var selectedId = record.get('id');
+        var mainContentContainer = Ext.ComponentQuery.query('#maincontent')[0];
 
         if (!mainContentContainer) {
             console.error('Main content container not found');
@@ -36,46 +37,55 @@ Ext.define('SenchaThemerDemo.view.main.MainController', {
                 mainContentContainer.add({
                     xtype: 'dashboard',
                 });
+
                 break;
             case 'email':
                 mainContentContainer.add({
                     xtype: 'email',
                 });
+
                 break;
             case 'groups':
                 mainContentContainer.add({
                     xtype: 'groups',
                 });
+
                 break;
             case 'settings':
                 mainContentContainer.add({
                     xtype: 'faq',
                 });
+
                 break;
             case 'notifications':
                 mainContentContainer.add({
                     xtype: 'notifications',
                 });
+
                 break;
             case 'analytics':
                 mainContentContainer.add({
                     xtype: 'groups',
                 });
+
                 break;
             case 'reports':
                 mainContentContainer.add({
                     xtype: 'notifications',
                 });
+
                 break;
             case 'calendar':
                 mainContentContainer.add({
                     xtype: 'groups',
                 });
+
                 break;
             case 'tasks':
                 mainContentContainer.add({
                     xtype: 'notifications',
                 });
+
                 break;
             case 'projects':
                 mainContentContainer.add({
@@ -108,6 +118,7 @@ Ext.define('SenchaThemerDemo.view.main.MainController', {
     },
     onPreview: function() {
         var chart;
+            var chart;  
 
         if (Ext.isIE8) {
             Ext.Msg.alert('Unsupported Operation', 'This operation requires a newer version of Internet Explorer.');
@@ -121,6 +132,7 @@ Ext.define('SenchaThemerDemo.view.main.MainController', {
     },
 
     onRefresh: function() {
+        var chart = this.lookup('chart');
         var chart = this.lookup('chart');
 
         chart.getStore().refreshData();
