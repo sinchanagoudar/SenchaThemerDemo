@@ -30,6 +30,7 @@ Ext.define('SenchaThemerDemo.view.main.MainController', {
             console.error('Main content container not found');
             return;
         }
+        console.log("Hi iam testing the menuitem click")
 
         mainContentContainer.removeAll();
         switch (selectedId) {
